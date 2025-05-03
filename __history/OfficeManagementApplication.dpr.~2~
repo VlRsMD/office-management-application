@@ -1,0 +1,14 @@
+program OfficeManagementApplication;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  MasterDetail in 'MasterDetail.pas' {OfficeManagementForm};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TOfficeManagementForm, OfficeManagementForm);
+  Application.Run;
+end.
